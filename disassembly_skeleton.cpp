@@ -33,9 +33,8 @@ string registers( int r ) {
 	else if (r == 13) { return  "$t5, "; }
 	else if (r == 14) { return  "$t6, "; }
 	else if (r == 15) { return  "$t7, "; }
-	else {
-		return "null, ";
-	}	
+	return "null, ";
+		
 }
 
 
