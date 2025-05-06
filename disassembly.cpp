@@ -70,7 +70,8 @@ string disassemble( string hex ) {
 	rt = rt & 31;	
 	result += registers(rt);
 	result += registers(rs);
-		
+
+	// code for this function found at GeeksforGeeks	
 	int16_t immediate = static_cast<int16_t>(stoi(hex.substr(4), nullptr, 16));
 	result += to_string(immediate);
     return result;  // remove stub and replace it with correct variable
